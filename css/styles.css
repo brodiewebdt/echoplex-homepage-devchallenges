@@ -312,6 +312,7 @@ body {
 .cards__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: var(--spacing-40) var(--spacing-32);
   justify-content: center;
 }
 
