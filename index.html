@@ -4,20 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
-    <meta
-      name="description"
-      content="Simple Homepage Echoplex | devChallenges.io"
-    />
-    <meta
-      name="keywords"
-      content="HTML, CSS, devChallenges.io, devChallenges"
-    />
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+    <meta name="description" content="Simple Homepage Echoplex | devChallenges.io" />
+    <meta name="keywords" content="HTML, CSS, devChallenges.io, devChallenges" />
     <meta name="author" content="David Turner" />
     <title>Simple Homepage Echoplex | devChallenges.io</title>
     <!-- Google Fonts -->
@@ -26,68 +15,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&display=swap" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    
   </head>
   <body>
-    <!-- 
-    
-    Connect
-    
-    EchoPlex is the first community-owned digital art gallery.
-    
-    Empowering Artists and Connecting Communities Through Digital Art
-    
-    Create
-    
-    Explore
-    
-    Join 30,000+ creators and collections
-    
-    👾
-    
-    Immersive Digital Art Experience
-    
-    ⚙️
-    
-    Customizable Flooring
-    
-    🎭
-    
-    State-of-the-Art Displays
-    
-    🎓
-    
-    Expertly Designed Lighting and Sound
-    
-    👨🏻‍💻
-    
-    Community Engagement
-    
-    👩‍🎨
-    
-    Artist Collaborations
-    
-    📚
-    
-    Educational Programs
-    
-    🤖
-    
-    Technology Integration
-    
-    Begin you digital art journey with EchoPlex
-    
-    Create
-    
-    © EchoPlex Oy. All rights reserved.
-    
-    Term
-    
-    Privacy Policy
-  
-    -->
+    <a class="skip__nav__link" href="#main__content" tabindex="0"> skip navigation </a>
+    <div class="page__wrapper">
+      <header class="header">
+        <img src="resources/logo.svg" alt="Site Logo" class="logo" />
+        <button class="btn btn__secondary">Connect</button>
+      </header>
+      <main id="main__content">
+        <div class="hero">
+          <div class="hero__image">
+            <img src="resources/hero_image@2x.png" alt="Hero Image" />
+          </div>
+          <!-- /.hero__image -->
+          <div class="hero__content">
+            <h1 class="page__title"><span>EchoPlex</span> is the first community-owned digital art gallery.</h1>
+            <p class="page__subtitle">Empowering Artists and Connecting Communities Through Digital Art</p>
+            <div class="hero__button_wrapper">
+              <button class="btn btn__primary">Create</button>
+              <a href="#" class="btn btn__secondary">Explore</a>
+            </div>
+            <!-- /.hero__button_wrapper -->
+          </div>
+        </div>
+        <!-- /.hero -->
 
+        <div class="cards">
+          <h2 class="section__title">Join 30,000+ creators and collections</h2>
+          <div class="cards__wrapper">
+            <div class="card">
+              <div class="emoji__card">👾</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Immersive Digital</span> Art Experience</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">⚙️</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Customizable</span> Flooring</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">🎭</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>State-of-the-Art</span> Displays</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">🎓</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Expertly Designed</span> Lighting and Sound</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">👨🏻‍💻</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Community</span> Engagement</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">👩‍🎨</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Artist</span> Collaborations</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">📚</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Educational</span> Programs</h3>
+            </div>
+            <!-- /.card -->
+            <div class="card">
+              <div class="emoji__card">🤖</div>
+              <!-- /.emoji__card -->
+              <h3 class="card__title"><span>Technology</span> Integration</h3>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.cards__wrapper -->
+        </div>
+        <!-- /.cards -->
+
+        <div class="cta">
+          <h2 class="section__title cta__title">Begin you digital art journey with EchoPlex</h2>
+          <button class="btn btn__primary">Create</button>
+        </div>
+        <!-- /.cta -->
+      </main>
+
+      <footer class="footer">
+        <p class="copyright">&copy; EchoPlex Oy. All rights reserved.</p>
+        <ul class="footer__links">
+          <li><a href="#">Term</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </footer>
     </div>
+    <!-- /.page__wrapper -->
   </body>
 </html>
