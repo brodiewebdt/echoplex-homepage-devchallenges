@@ -283,10 +283,6 @@ body {
   flex: 1;
 }
 
-.hero__image {
-  outline: 2px solid red;
-}
-
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -312,7 +308,6 @@ body {
 .cards {
   padding-block: var(--spacing-72);
   margin-block-end: var(--spacing-72);
-  outline: 2px solid blue;
 }
 
 .cards__wrapper {
@@ -328,8 +323,6 @@ body {
   align-items: center;
   text-align: center;
   background: white;
-
-  outline: 2px solid greenyellow;
 }
 
 .card:nth-of-type(1) {
