@@ -446,7 +446,6 @@ body {
 @media (min-width: 48rem) {
   .page__wrapper {
     padding-inline: var(--spacing-48);
-    padding-block: var(--spacing-72);
   }
 
   .hero {
