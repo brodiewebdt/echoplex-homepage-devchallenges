@@ -170,7 +170,7 @@ h6 {
 }
 
 body {
-  color: var(--color-neutral-400);
+  color: var(--color-neutral-900);
   font-family: var(--ff-base);
   font-size: var(--fs-base);
   line-height: 1.6;
@@ -188,4 +188,288 @@ body {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important;
+}
+
+.skip__nav__link {
+  position: absolute;
+  left: 0.25rem;
+  transform: translateY(-150%);
+  transition: transform 325ms ease-in;
+
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip__nav__link:focus {
+  transform: translateY(0);
+}
+
+.page__wrapper {
+  width: min(100% - 3rem, 1200px);
+  margin-inline: auto;
+  padding-block: var(--spacing-24);
+  padding-block: var(--spacing-72);
+}
+
+/********* Typography Styles **********/
+.section__title {
+  font-size: var(--fs-32);
+  font-weight: var(--fw-700);
+  color: var(--color-neutral-900);
+  margin-block-end: var(--spacing-24);
+
+  max-width: 19ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+/********* Button Styles **********/
+.btn {
+  display: inline-block;
+  padding: var(--spacing-12) var(--spacing-36);
+  border: 2px solid var(--color-neutral-400);
+  border-radius: 24px;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-600);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 325ms ease-in-out, color 325ms ease-in-out;
+}
+
+.btn__primary {
+  background-color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+  color: var(--color-neutral-100);
+}
+
+.btn__primary:hover {
+  background-color: var(--color-primary-200);
+  border-color: var(--color-primary-200);
+  color: var(--color-neutral-100);
+}
+
+.btn__secondary {
+  background-color: var(--color-neutral-100);
+  color: var(--color-primary-400);
+}
+
+.btn__secondary:hover {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-100);
+}
+
+/********* Header Styles **********/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: var(--spacing-24);
+}
+
+/********* Hero Styles **********/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  padding-block: var(--spacing-32);
+  margin-block-end: var(--spacing-36);
+}
+.hero > * {
+  flex: 1;
+}
+
+.hero__image {
+  outline: 2px solid red;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+
+.page__title {
+  font-size: var(--fs-36);
+  font-weight: var(--fw-700);
+  color: var(--color-neutral-900);
+}
+
+.page__title span {
+  color: var(--color-primary-400);
+}
+
+.hero__button_wrapper {
+  display: flex;
+  gap: var(--spacing-12);
+}
+
+/****** Card Styles ******/
+.cards {
+  padding-block: var(--spacing-72);
+  margin-block-end: var(--spacing-72);
+  outline: 2px solid blue;
+}
+
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: var(--spacing-32);
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+
+  outline: 2px solid greenyellow;
+}
+
+.card:nth-of-type(1) {
+  --accent-bg: var(--color-purple-200);
+  --accent-text: var(--color-purple-400);
+}
+
+.card:nth-of-type(2) {
+  --accent-bg: var(--color-green-200);
+  --accent-text: var(--color-green-400);
+}
+.card:nth-of-type(3) {
+  --accent-bg: var(--color-red-200);
+  --accent-text: var(--color-red-400);
+}
+
+.card:nth-of-type(4) {
+  --accent-bg: var(--color-yellow-200);
+  --accent-text: var(--color-yellow-400);
+}
+
+.card:nth-of-type(5) {
+  --accent-bg: var(--color-orange-200);
+  --accent-text: var(--color-orange-400);
+}
+
+.card:nth-of-type(6) {
+  --accent-bg: var(--color-blue-200);
+  --accent-text: var(--color-blue-400);
+}
+
+.card:nth-of-type(7) {
+  --accent-bg: var(--color-lilac-200);
+  --accent-text: var(--color-lilac-400);
+}
+
+.card:nth-of-type(8) {
+  --accent-bg: var(--color-aqua-200);
+  --accent-text: var(--color-aqua-400);
+}
+
+/********* Card Styles **********/
+.emoji__card {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: var(--accent-bg);
+  font-size: var(--fs-32);
+}
+
+.card__title {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-700);
+  margin-block-start: var(--spacing-24);
+}
+
+.card__title span {
+  color: var(--accent-text);
+}
+
+/********* CTA Styles **********/
+.cta {
+  background-image: url('../resources/footer_background_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block: var(--spacing-188) var(--spacing-164);
+  text-align: center;
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.cta__title {
+  color: var(--color-neutral-100);
+  margin-block-end: var(--spacing-24);
+}
+
+/********* Footer Styles **********/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-32);
+  padding-block: var(--spacing-24);
+  color: var(--color-neutral-400);
+  background-color: var(--color-neutral-900);
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--spacing-32);
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footer__links a {
+  font-weight: 700;
+  color: var(--color-neutral-400);
+  text-decoration: none;
+}
+
+/********* Media Queries **********/
+@media (min-width: 40rem) {
+  .cards__wrapper {
+    gap: var(--spacing-64);
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-inline: var(--spacing-48);
+  }
+}
+
+@media (min-width: 48rem) {
+  .page__wrapper {
+    padding-inline: var(--spacing-48);
+  }
+
+  .hero {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer {
+    padding-inline: var(--spacing-112);
+  }
+}
+
+@media (min-width: 80rem) {
+  .cards__wrapper {
+    gap: var(--spacing-96);
+  }
 }
