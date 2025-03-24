@@ -1,31 +1,57 @@
 :root {
   /* Primary Colors */
-  --color-primary-400: hsl(227, 67%, 48%);
-  --color-primary-500: hsl(227, 82%, 38%);
+  --color-primary-200: hsl(244, 55%, 59%);
+  --color-primary-400: hsl(244, 55%, 49%);
 
   /* Neutral Colors */
   --color-neutral-100: hsl(0, 0%, 100%);
-  --color-neutral-200: hsl(210, 20%, 98%);
-  --color-neutral-300: hsl(220, 13%, 91%);
-  --color-neutral-400: hsl(221, 8%, 46%);
-  --color-neutral-800: hsl(219, 17%, 27%);
-  --color-neutral-900: hsl(0, 0%, 0%);
+  --color-neutral-400: #e5e7eb;
+  --color-neutral-500: #9da3ae;
+  --color-neutral-900: #121826;
+
+  /* Purple Colors */
+  --color-purple-200: #c9d2fa;
+  --color-purple-400: #4138c2;
+
+  /* Green Colors */
+  --color-green-200: #e2fbe8;
+  --color-green-400: #5ec269;
+
+  /* Red Colors */
+  --color-red-200: #fbe5e6;
+  --color-red-400: #e14f62;
+
+  /* Yellow Colors */
+  --color-yellow-200: #fdf9c9;
+  --color-yellow-400: #e2b53e;
+
+  /* Orange Colors */
+  --color-orange-200: #fceed8;
+  --color-orange-400: #e87b35;
+
+  /* Blue Colors */
+  --color-blue-200: #dee9fc;
+  --color-blue-400: #4e80ee;
+
+  /* Lilac Colors */
+  --color-lilac-200: #f1e8fd;
+  --color-lilac-400: #9d59ef;
+
+  /* Aqua Colors */
+  --color-aqua-200: #d5faf1;
+  --color-aqua-400: #52b3d0;
 
   /* Font Family */
-  --ff-base: 'Poppins', sans-serif;
+  --ff-base: 'Be Vietnam Pro', sans-serif;
 
   /* Font Size */
-  --fs-48: 3rem;
+  --fs-36: 2.25rem;
   --fs-32: 2rem;
   --fs-20: 1.25rem;
-  --fs-18: 1.125rem;
   --fs-16: 1rem;
-  --fs-14: 0.875rem;
-  --fs-12: 0.75rem;
-  --fs-10: 0.625rem;
-
   /* Default Font Size */
-  --fs-base: var(--fs-16);
+  --fs-base: 1rem;
+
   /* Font Weights */
   --fw-900: 900;
   --fw-800: 800;
@@ -38,14 +64,26 @@
   --fw-100: 100;
 
   /* Spacing */
-  --spacing-6: 0.375rem;
+  --spacing-0: 0;
+  --spacing-2: 0.125rem;
+  --spacing-4: 0.25rem;
   --spacing-8: 0.5rem;
   --spacing-12: 0.75rem;
   --spacing-16: 1rem;
   --spacing-20: 1.25rem;
   --spacing-24: 1.5rem;
-  --spacing-60: 3.75rem;
+  --spacing-32: 2rem;
+  --spacing-36: 2.25rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-56: 3.5rem;
+  --spacing-64: 4rem;
+  --spacing-72: 4.5rem;
   --spacing-80: 5rem;
+  --spacing-96: 6rem;
+  --spacing-112: 7rem;
+  --spacing-164: 10.25rem;
+  --spacing-188: 11.75rem;
 }
 
 /********* Reset **********/
